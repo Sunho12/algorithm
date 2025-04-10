@@ -15,3 +15,10 @@ for _ in range(t):
         total_profit += max_price - price
 
     print(total_profit)
+
+# 3부터 max = 3 -> 이익 = 0
+# 0일 때 max = 3 -> 이익 = 3
+# 5일 때 max = 5 -> 이익 = 0
+# 6일때 max = 6 -> 이익 = 0
+# 2일때 max = 6 -> 이익 = 4
+# 3일 때 max = 6 -> 이익 = 3

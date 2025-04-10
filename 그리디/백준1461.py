@@ -6,5 +6,4 @@ book_loc = list(map(int, input().split()))
 book_loc.sort()
 total_walk = 0
 
-
 print(total_walk)

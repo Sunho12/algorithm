@@ -1,0 +1,30 @@
+import sys
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+lecture = list(map(int, input().split()))
+
+def can_blue(length):
+    cnt = 1
+    now = 0
+    for lec in lecture:
+        if now + lec > length:
+            now = lec
+            cnt += 1
+        else:
+            now += lec
+    return cnt <= m
+
+low = max(lecture)
+high = sum(lecture)
+answer = high
+
+while low <= high:
+    mid = (low+high) // 2
+    if can_blue(mid):
+        answer = mid
+        high = mid - 1
+    else:
+        low = mid + 1
+
+print(answer)

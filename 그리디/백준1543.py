@@ -7,8 +7,7 @@ cnt = 0
 length = len(search)
 i = 0
 
-while i < (len(s) - length):
-    print(s[i:i+length])
+while i < len(s):
     if s[i:i+length] == search:
         cnt += 1
         i += length

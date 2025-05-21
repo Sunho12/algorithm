@@ -21,7 +21,7 @@ for lv, id in people:
             break
     
     if not flag:
-        rooms.append([lv, [lv, id]])
+        rooms.append([lv, [[lv, id]]])
 
 for i in range(len(rooms)):
     if len(rooms[i][1]) == m:

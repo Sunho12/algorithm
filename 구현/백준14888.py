@@ -11,9 +11,9 @@ def cal(a, b, opp):
     elif opp == "*":
         answer = a * b
     else:
-        if a < 0:
+        if a < 0:  # 음수처리 해줘야함.
             return -(-a // b)
-        return a // b
+        return a // b 
     return answer
 
 def func(a_c, opp_list):
